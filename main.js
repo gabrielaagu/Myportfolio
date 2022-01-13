@@ -41,6 +41,48 @@ window.onload = () => {
         download("email.txt", tempText);
 
         //ahora hay que mostrar un mensaje en la pantalla, os toca hacerlo a vosotros
+        
+        //No funcionan:
+        // function mostrarConfirmar(mensaje){
 
-    });
+        //     const confirmar = confirm(mensaje);
+        //     return confirmar.value;
+        
+        // }
+        
+        // let confirmado = mostrarConfirmar("¡Hola!, su mensaje ha sido enviado correctamente");
+
+        // -------------------
+
+        // function submitform(){
+        //     alert("Formulario enviado correctamente");
+        //     document.getElementById('form').submit();
+        //   }
+        // --------------------------------
+
+        // function enviar() {
+        //     let form;
+        //     var dato = form[0];
+        //     if (dato.value=="enviar") {
+        //       alert("Formulario enviado");
+        //       form.submit();
+        //       return true;
+        //     } else {
+        //       alert("No se envía el formulario");
+        //       return false;
+        //     }
+        //   }
+        // -------------------------
+
+        let form = document.createElement('form');
+        form.action = 'https://google.com/search';
+        form.method = 'GET';
+
+        form.innerHTML = '<input name="send" value="Enviar">';
+
+        // el formulario debe estar en el document para poder enviarlo
+        document.body.append(form);
+
+        form.submit();
+
 }

@@ -29,6 +29,10 @@
 </head>
 
 <body class="body">
+
+    <div class="w-form-done" id="noti">
+        <p>Muchas gracias, tu solicitud ha sido recibida</p>
+    </div>
     <div class="section-1">
         <div class="container w-container"><img src="https://drive.google.com/uc?id=1LvXpgr5Qgs3LKHBidsW0PeUYsRsucB1B" loading="lazy" height="64" width="64" sizes="64px" alt="" class="image" />
             <h1 class="heading">Bienvenido a mi Portafolio👋</h1>
@@ -127,15 +131,14 @@
                         <p class="paragraph-5">Enviame tus comentarios</p>
                         <label for="name" class="body">Nombre</label>
                         <input type="text" class="text-field w-input" maxlength="256" name="name" data-name="Name" id="name" placeholder="Ingresa tu nombre y apellido">
+                        <label for="phone" class="body">Teléfono</label>
+                        <input type="number" class="text-field w-input">
                         <label for="email" class="field-label">Email</label>
                         <input type="email" class="text-field-2 w-input" maxlength="256" name="email" data-name="Email" id="email" placeholder="Ingresa tu email" required="">
                         <label for="email-2" class="field-label-2">Comentarios</label>
                         <textarea name="field" id="field" maxlength="5000" class="textarea w-input" placeholder="Ingresa tus comentarios"></textarea>
-                        <input type="submit" value="Enviar" name="send" onclick="alert('Su formulario ha sido enviado correctamente')" data-wait="Por favor espera..." class="button w-button">
+                        <input type="submit" value="Enviar" name="send" data-wait="Por favor espera..." class="button w-button">
                     </form>
-                    <div class="w-form-done">
-                        <div>Muchas gracias, tu solicitud ha sido recibida</div>
-                    </div>
                     <div class="w-form-fail">
                         <div>Disculpa, algo ha ido mal, mientras se enviaba tu solicitud.</div>
                     </div>

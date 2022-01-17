@@ -6,7 +6,6 @@
     <title>Portafolio de Gabriela García Uzcategui</title>
     <meta content="width=device-width, initial-scale=1" name="viewport" />
     <meta content="Webflow" name="generator" />
-    <link href="styles.css" rel="stylesheet" type="text/css" />
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script>
     <script type="text/javascript">
         WebFont.load({
@@ -25,137 +24,193 @@
     </script>
     <link href="https://drive.google.com/uc?id=1c6NVokVZVH1OzeRtywI4ql7WpS1SNKFN" rel="shortcut icon" type="image/x-icon" />
     <link href="https://drive.google.com/uc?id=1c6NVokVZVH1OzeRtywI4ql7WpS1SNKFN" rel="apple-touch-icon" />
-    <link rel="stylesheet" href="/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <link href="./assets/styles.css" rel="stylesheet" type="text/css" />
+
 </head>
 
 <body class="body">
 
-    <div class="w-form-done" id="noti">
-        <p>Muchas gracias, tu solicitud ha sido recibida</p>
-    </div>
-    <div class="section-1">
-        <div class="container w-container"><img src="https://drive.google.com/uc?id=1LvXpgr5Qgs3LKHBidsW0PeUYsRsucB1B" loading="lazy" height="64" width="64" sizes="64px" alt="" class="image" />
-            <h1 class="heading">Bienvenido a mi Portafolio👋</h1>
-            <p class="paragraph">Soy Gabriela García Uzcategui. Tengo 23 años. Soy marketer, desarrolladora web y tengo más de tres años de experiencia trabajando en atención al cliente, priorizo la usabilidad y sencillez de las interfaces para facilitar el trabajo del usuario
-                final. Me gusta trabajar en proyectos adicionales en desarrollo web y analisis de datos. Estoy mejorando mis conocimientos en JavaScript y Python.</p>
-            <a href="#email-form" class="button">Contáctame</a>
+    <!-- Navbar con bootstrap -->
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" id="navbar__header">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="https://drive.google.com/uc?id=1wqByC00aFqABdF3czmhNY2-nZevu46cl" alt="" width="30" height="24">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown
+                </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled">Disabled</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!-- Aqui termina el navbar -->
+
+    <!-- Aqui empieza el main -->
+
+    <div id="container" class="container">
+        <div class="w-form-done" id="noti">
+            <p>Muchas gracias, tu solicitud ha sido recibida</p>
+        </div>
+        <div class="section-1">
+            <div class="container w-container"><img src="https://drive.google.com/uc?id=1LvXpgr5Qgs3LKHBidsW0PeUYsRsucB1B" loading="lazy" height="64" width="64" sizes="64px" alt="" class="image" />
+                <h1 class="heading">Bienvenido a mi Portafolio✨</h1>
+                <p class="paragraph">Soy Gabriela García Uzcategui. Tengo 23 años. Soy marketer, desarrolladora web y tengo más de tres años de experiencia trabajando en atención al cliente, priorizo la usabilidad y sencillez de las interfaces para facilitar el trabajo del
+                    usuario final. Me gusta trabajar en proyectos adicionales en desarrollo web y analisis de datos. Estoy mejorando mis conocimientos en JavaScript y Python.</p>
+                <a href="#email-form" class="button">Contáctame</a>
+            </div>
+
+            <div class="section-2">
+                <div class="container w-container">
+                    <h1 class="heading-3">Mis intereses:</h1>
+                    <div class="columns-2 w-row">
+                        <div class="column-18 w-col w-col-4">
+                            <img src="https://cdn.pixabay.com/photo/2018/05/18/15/30/web-design-3411373_960_720.jpg" loading="lazy" height="" sizes="(max-width: 479px) 90vw, (max-width: 767px) 94vw, (max-width: 991px) 30vw, 259.984375px" alt="imagen de desarrollo web">
+                            <h2 class="heading-2">Desarrollo web</h2>
+                            <p class="paragraph-2">Me apasiona el desarrollo web, actualmente me encuentro estudiando con la fundación tomillo para perfeccionar mis habilidades en HTML, CSS y JS.</p>
+                            <a href="/" class="button">Ver todo</a>
+                        </div>
+                        <div class="column-2 w-col w-col-4">
+                            <img src="https://cdn.pixabay.com/photo/2019/08/06/22/48/artificial-intelligence-4389372_960_720.jpg" loading="lazy" sizes="(max-width: 479px) 90vw, (max-width: 767px) 94vw, (max-width: 991px) 30vw, 259.984375px" alt="image de inteligencia artificial"
+                                class="image-8">
+                            <h2 class="heading-2">Ciencia de datos</h2>
+                            <p class="paragraph-2">Me encuentro estudiando el grado de ciencia de datos aplicada en la Universidad Oberta de Cataluña, y con la academia online Platzi.</p>
+                            <a href="/" class="button">Ver todo</a>
+                        </div>
+                        <div class="column w-col w-col-4">
+                            <img src="https://cdn.pixabay.com/photo/2020/05/18/16/17/social-media-5187243_960_720.png" loading="lazy" sizes="(max-width: 479px) 90vw, (max-width: 767px) 94vw, (max-width: 991px) 30vw, 259.984375px" alt="foto de marketing" class="image-9">
+                            <h2 class="heading-2">Marketing</h2>
+                            <p class="paragraph-2">He desarrollado planes de marketing digital en mi proyecto final para titularme como Técnico superior en Marketing y Publicidad.</p>
+                            <a href="/" class="button">Ver todo</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <div class="container-4 w-container">
+                    <h1 class="heading-3" id="misproyectos">Mis proyectos:</h1>
+                    <div class="columns-5 w-row">
+                        <div class="column-11 w-col w-col-4">
+                            <img src="https://drive.google.com/uc?id=1pncGc6WUR6LhLXmx20YaoljbP55zzwfs" loading="lazy" height="" sizes="(max-width: 479px) 90vw, (max-width: 767px) 94vw, (max-width: 991px) 30vw, 259.984375px" alt="foto de proyecto 1" class="image-3">
+                        </div>
+                        <div class="column-10 w-col w-col-4">
+                            <img src="https://drive.google.com/uc?id=1rA79tKmMTKvtQNtB08pGHl4Yf5VBKLx4" loading="lazy" height="" sizes="(max-width: 479px) 90vw, (max-width: 767px) 94vw, (max-width: 991px) 30vw, 259.984375px" class="image-4">
+                        </div>
+                        <div class="column-12 w-col w-col-4">
+                            <img src="https://drive.google.com/uc?id=1VtwOrs9qGMwgXZMKjCGMsDrE-nLPQ97f" loading="lazy" height="" sizes="(max-width: 479px) 90vw, (max-width: 767px) 94vw, (max-width: 991px) 30vw, 259.984375px" alt="foto de proyecto 3" class="image-2">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section-3">
+                <div class="container-2 w-container">
+                    <div class="columns-3 w-row">
+                        <div class="column-15 w-col w-col-4">
+                            <img src="https://drive.google.com/uc?id=1uKowcbmUl1r2ZTSzK3BvuPFZcaCPcrto" loading="lazy" height="" sizes="(max-width: 479px) 90vw, (max-width: 767px) 94vw, (max-width: 991px) 30vw, 259.984375px" alt="foto de proyecto 4" class="image-5">
+                        </div>
+                        <div class="column-14 w-col w-col-4">
+                            <img src="https://drive.google.com/uc?id=1VEoi_58mPYfYJJ7AKziFq9FG9YTft4_i" loading="lazy" height="" sizes="(max-width: 479px) 90vw, (max-width: 767px) 94vw, (max-width: 991px) 30vw, 259.984375px" alt="foto de proyecto 5" class="image-6">
+                        </div>
+                        <div class="column-13 w-col w-col-4">
+                            <img src="https://drive.google.com/uc?id=1glEe6i-nrQIG0ysactzS8R3q3moWMTfz" loading="lazy" height="" sizes="(max-width: 479px) 90vw, (max-width: 767px) 94vw, (max-width: 991px) 30vw, 259.984375px" alt="foto proyecto 6" class="image-7">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section-4">
+                <div class="container-3 w-container">
+                    <div class="w-row">
+                        <div class="column-17 w-col w-col-4">
+                            <h1 class="heading-3">Experiencia laboral</h1>
+                        </div>
+                        <div class="column-3 w-col w-col-4"></div>
+                        <div class="column-4 w-col w-col-4"></div>
+                    </div>
+                    <div class="w-row">
+                        <div class="column-5 w-col w-col-4">
+                            <p class="paragraph-3">ArenabaH abogados.</p>
+                            <p class="paragraph-3">Community Manager.</p>
+                            <p class="paragraph-4">Mar 18 — Oct 18</p>
+                        </div>
+                        <div class="column-6 w-col w-col-4">
+                            <p class="paragraph-3">Machelin Diaz Abogados.</p>
+                            <p class="paragraph-3">Paralegal.</p>
+                            <p class="paragraph-4">Nov 18 — Oct 21</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section-6">
+                <div class="container-5 w-container">
+                    <div class="w-form">
+                        <form id="email-form" name="email-form" data-name="Email Form" class="form">
+                            <h1 class="heading-3">Si buscas ayuda con el desarrollo Frontend</h1>
+                            <p class="paragraph-5">Enviame tus comentarios</p>
+                            <label for="name" class="body">Nombre</label>
+                            <input type="text" class="text-field w-input" maxlength="256" name="name" data-name="Name" id="name" placeholder="Ingresa tu nombre y apellido">
+                            <label for="phone" class="body">Teléfono</label>
+                            <input type="number" class="text-field w-input">
+                            <label for="email" class="field-label">Email</label>
+                            <input type="email" class="text-field-2 w-input" maxlength="256" name="email" data-name="Email" id="email" placeholder="Ingresa tu email" required="">
+                            <label for="email-2" class="field-label-2">Comentarios</label>
+                            <textarea name="field" id="field" maxlength="5000" class="textarea w-input" placeholder="Ingresa tus comentarios"></textarea>
+                            <input type="submit" value="Enviar" name="send" data-wait="Por favor espera..." class="button w-button">
+                        </form>
+                        <div class="w-form-fail">
+                            <div>Disculpa, algo ha ido mal, mientras se enviaba tu solicitud.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section-5">
+                <div class="container-6 w-container">
+                    <div class="footer-wrap">
+                    </div>
+                    <div class="footer-links"><a href="https://www.linkedin.com/in/gabriela-garcia-uzcategui-2362b7141/" target="_blank" class="button-footer">LinkedIn</a>
+                        <a href="https://github.com/gabrielaagu?tab=repositories" target="_blank" class="button-footer">github</a>
+                        <a href="https://www.instagram.com/aleirbaguzcategui/" target="_blank" class="button-footer">Instagram</a>
+                    </div>
+                </div>
+            </div>
         </div>
 
-        <div class="section-2">
-            <div class="container w-container">
-                <h1 class="heading-3">Mis intereses:</h1>
-                <div class="columns-2 w-row">
-                    <div class="column-18 w-col w-col-4">
-                        <img src="https://cdn.pixabay.com/photo/2018/05/18/15/30/web-design-3411373_960_720.jpg" loading="lazy" height="" sizes="(max-width: 479px) 90vw, (max-width: 767px) 94vw, (max-width: 991px) 30vw, 259.984375px" alt="imagen de desarrollo web">
-                        <h2 class="heading-2">Desarrollo web</h2>
-                        <p class="paragraph-2">Me apasiona el desarrollo web, actualmente me encuentro estudiando con la fundación tomillo para perfeccionar mis habilidades en HTML, CSS y JS.</p>
-                        <a href="/" class="button">Ver todo</a>
-                    </div>
-                    <div class="column-2 w-col w-col-4">
-                        <img src="https://cdn.pixabay.com/photo/2019/08/06/22/48/artificial-intelligence-4389372_960_720.jpg" loading="lazy" sizes="(max-width: 479px) 90vw, (max-width: 767px) 94vw, (max-width: 991px) 30vw, 259.984375px" alt="image de inteligencia artificial"
-                            class="image-8">
-                        <h2 class="heading-2">Ciencia de datos</h2>
-                        <p class="paragraph-2">Me encuentro estudiando el grado de ciencia de datos aplicada en la Universidad Oberta de Cataluña, y con la academia online Platzi.</p>
-                        <a href="/" class="button">Ver todo</a>
-                    </div>
-                    <div class="column w-col w-col-4">
-                        <img src="https://cdn.pixabay.com/photo/2020/05/18/16/17/social-media-5187243_960_720.png" loading="lazy" sizes="(max-width: 479px) 90vw, (max-width: 767px) 94vw, (max-width: 991px) 30vw, 259.984375px" alt="foto de marketing" class="image-9">
-                        <h2 class="heading-2">Marketing</h2>
-                        <p class="paragraph-2">He desarrollado planes de marketing digital en mi proyecto final para titularme como Técnico superior en Marketing y Publicidad.</p>
-                        <a href="/" class="button">Ver todo</a>
-                    </div>
-                </div>
-            </div>
-        </div>
 
-        <div>
-            <div class="container-4 w-container">
-                <h1 class="heading-3" id="misproyectos">Mis proyectos:</h1>
-                <div class="columns-5 w-row">
-                    <div class="column-11 w-col w-col-4">
-                        <img src="https://drive.google.com/uc?id=1pncGc6WUR6LhLXmx20YaoljbP55zzwfs" loading="lazy" height="" sizes="(max-width: 479px) 90vw, (max-width: 767px) 94vw, (max-width: 991px) 30vw, 259.984375px" alt="foto de proyecto 1" class="image-3">
-                    </div>
-                    <div class="column-10 w-col w-col-4">
-                        <img src="https://drive.google.com/uc?id=1rA79tKmMTKvtQNtB08pGHl4Yf5VBKLx4" loading="lazy" height="" sizes="(max-width: 479px) 90vw, (max-width: 767px) 94vw, (max-width: 991px) 30vw, 259.984375px" class="image-4">
-                    </div>
-                    <div class="column-12 w-col w-col-4">
-                        <img src="https://drive.google.com/uc?id=1VtwOrs9qGMwgXZMKjCGMsDrE-nLPQ97f" loading="lazy" height="" sizes="(max-width: 479px) 90vw, (max-width: 767px) 94vw, (max-width: 991px) 30vw, 259.984375px" alt="foto de proyecto 3" class="image-2">
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="section-3">
-            <div class="container-2 w-container">
-                <div class="columns-3 w-row">
-                    <div class="column-15 w-col w-col-4">
-                        <img src="https://drive.google.com/uc?id=1uKowcbmUl1r2ZTSzK3BvuPFZcaCPcrto" loading="lazy" height="" sizes="(max-width: 479px) 90vw, (max-width: 767px) 94vw, (max-width: 991px) 30vw, 259.984375px" alt="foto de proyecto 4" class="image-5">
-                    </div>
-                    <div class="column-14 w-col w-col-4">
-                        <img src="https://drive.google.com/uc?id=1VEoi_58mPYfYJJ7AKziFq9FG9YTft4_i" loading="lazy" height="" sizes="(max-width: 479px) 90vw, (max-width: 767px) 94vw, (max-width: 991px) 30vw, 259.984375px" alt="foto de proyecto 5" class="image-6">
-                    </div>
-                    <div class="column-13 w-col w-col-4">
-                        <img src="https://drive.google.com/uc?id=1glEe6i-nrQIG0ysactzS8R3q3moWMTfz" loading="lazy" height="" sizes="(max-width: 479px) 90vw, (max-width: 767px) 94vw, (max-width: 991px) 30vw, 259.984375px" alt="foto proyecto 6" class="image-7">
-                    </div>
-                </div>
-            </div>
-        </div>
+        <script src="./assets/main.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
 
-        <div class="section-4">
-            <div class="container-3 w-container">
-                <div class="w-row">
-                    <div class="column-17 w-col w-col-4">
-                        <h1 class="heading-3">Experiencia laboral</h1>
-                    </div>
-                    <div class="column-3 w-col w-col-4"></div>
-                    <div class="column-4 w-col w-col-4"></div>
-                </div>
-                <div class="w-row">
-                    <div class="column-5 w-col w-col-4">
-                        <p class="paragraph-3">ArenabaH abogados.</p>
-                        <p class="paragraph-3">Community Manager.</p>
-                        <p class="paragraph-4">Mar 18 — Oct 18</p>
-                    </div>
-                    <div class="column-6 w-col w-col-4">
-                        <p class="paragraph-3">Machelin Diaz Abogados.</p>
-                        <p class="paragraph-3">Paralegal.</p>
-                        <p class="paragraph-4">Nov 18 — Oct 21</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="section-6">
-            <div class="container-5 w-container">
-                <div class="w-form">
-                    <form id="email-form" name="email-form" data-name="Email Form" class="form">
-                        <h1 class="heading-3">Si buscas ayuda con el desarrollo Frontend</h1>
-                        <p class="paragraph-5">Enviame tus comentarios</p>
-                        <label for="name" class="body">Nombre</label>
-                        <input type="text" class="text-field w-input" maxlength="256" name="name" data-name="Name" id="name" placeholder="Ingresa tu nombre y apellido">
-                        <label for="phone" class="body">Teléfono</label>
-                        <input type="number" class="text-field w-input">
-                        <label for="email" class="field-label">Email</label>
-                        <input type="email" class="text-field-2 w-input" maxlength="256" name="email" data-name="Email" id="email" placeholder="Ingresa tu email" required="">
-                        <label for="email-2" class="field-label-2">Comentarios</label>
-                        <textarea name="field" id="field" maxlength="5000" class="textarea w-input" placeholder="Ingresa tus comentarios"></textarea>
-                        <input type="submit" value="Enviar" name="send" data-wait="Por favor espera..." class="button w-button">
-                    </form>
-                    <div class="w-form-fail">
-                        <div>Disculpa, algo ha ido mal, mientras se enviaba tu solicitud.</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="section-5">
-            <div class="container-6 w-container">
-                <div class="footer-wrap">
-                </div>
-                <div class="footer-links"><a href="https://www.linkedin.com/in/gabriela-garcia-uzcategui-2362b7141/" target="_blank" class="button-footer">LinkedIn</a>
-                    <a href="https://github.com/gabrielaagu?tab=repositories" target="_blank" class="button-footer">github</a>
-                    <a href="https://www.instagram.com/aleirbaguzcategui/" target="_blank" class="button-footer">Instagram</a>
-                </div>
-            </div>
-        </div>
-        <script src="main.js"></script>
 </body>
 
 </html>

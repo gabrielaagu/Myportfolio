@@ -51,4 +51,24 @@ window.onload = () => {
             document.getElementById("noti").style.display = "none";
         }, 5000);
     });
-};
+
+
+    // Codigo para que cambie el Navbar usando Js
+
+    window.onscroll = function() {
+        myFunction();
+    }
+    console.log("window");
+
+    var header = document.getElementById("navbar__header");
+    var navTop = header.offsetTop;
+
+
+    function myFunction() {
+        if (window.scrollY >= 100) {
+            header.classList.add("sticky");
+        } else {
+            header.classList.remove("sticky");
+        }
+    }
+}

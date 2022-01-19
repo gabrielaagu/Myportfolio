@@ -1290,7 +1290,7 @@ label {
 .paragraph-5 {
     margin-bottom: 40px;
     font-family: Montserrat, sans-serif;
-    color: #999;
+    color: #000;
     font-size: 14px;
     font-weight: 300;
 }
@@ -1342,7 +1342,6 @@ label {
     -ms-grid-rows: auto auto;
     grid-template-rows: auto auto;
     background-color: #cc606e;
-    opacity: 0.5;
 }
 
 .columns-5 {
@@ -2133,61 +2132,59 @@ a {
     color: black;
 }
 
-
-.caption-style-4{
+.caption-style-4 {
     list-style-type: none;
     margin: 0px;
     padding: 0px;
-    
 }
 
-.caption-style-4 li{
+.caption-style-4 li {
     float: left;
     padding: 30px 0;
     position: relative;
     overflow: hidden;
 }
 
-.caption-style-4 li:hover .caption{
+.caption-style-4 li:hover .caption {
     opacity: 1;
 }
 
-.caption-style-4 li:hover img{
+.caption-style-4 li:hover img {
     opacity: 1;
-    transform: scale(1.15,1.15);
-    -webkit-transform:scale(1.15,1.15);
-    -moz-transform:scale(1.15,1.15);
-    -ms-transform:scale(1.15,1.15);
-    -o-transform:scale(1.15,1.15);
+    transform: scale(1.15, 1.15);
+    -webkit-transform: scale(1.15, 1.15);
+    -moz-transform: scale(1.15, 1.15);
+    -ms-transform: scale(1.15, 1.15);
+    -o-transform: scale(1.15, 1.15);
 }
 
-
-.caption-style-4 img{
+.caption-style-4 img {
     margin: 0px;
     padding: 0px;
     float: left;
     z-index: 4;
 }
 
-
-.caption-style-4 .caption{
+.caption-style-4 .caption {
     cursor: pointer;
     position: absolute;
     opacity: 0;
-    -webkit-transition:all 0.45s ease-in-out;
-    -moz-transition:all 0.45s ease-in-out;
-    -o-transition:all 0.45s ease-in-out;
-    -ms-transition:all 0.45s ease-in-out;
-    transition:all 0.45s ease-in-out;
+    -webkit-transition: all 0.45s ease-in-out;
+    -moz-transition: all 0.45s ease-in-out;
+    -o-transition: all 0.45s ease-in-out;
+    -ms-transition: all 0.45s ease-in-out;
+    transition: all 0.45s ease-in-out;
 }
 
-.caption-style-4 img{
-    -webkit-transition:all 0.25s ease-in-out;
-    -moz-transition:all 0.25s ease-in-out;
-    -o-transition:all 0.25s ease-in-out;
-    -ms-transition:all 0.25s ease-in-out;
-    transition:all 0.25s ease-in-out;
+.caption-style-4 img {
+    -webkit-transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+    -o-transition: all 0.25s ease-in-out;
+    -ms-transition: all 0.25s ease-in-out;
+    transition: all 0.25s ease-in-out;
 }
+
+
 /* .caption-style-4 .blur{
     background-color: #fdedec;
     opacity: 0.5;

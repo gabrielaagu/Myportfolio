@@ -52,6 +52,10 @@ window.onload = () => {
         }, 5000);
     });
 
+    document.getElementById("noti__close").addEventListener("click", () => {
+        noti.style.display = "none";
+    })
+
 
     // Codigo para que cambie el Navbar usando Js
 
